@@ -62,6 +62,9 @@
         }
     </style>
 </head>
+<<<<<<< HEAD
+<body>                                                                                                                                                                                                                                                                
+=======
 <body>
  
     <h2>Submit a Review</h2>
@@ -102,6 +105,7 @@
 
   
 
+>>>>>>> branch 'master' of https://github.com/sanirurajapaksha/SLIITFlix.git
 
 </body>
 </html>
