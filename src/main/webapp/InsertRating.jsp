@@ -1,27 +1,39 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%
+    session = request.getSession(false);
+    if (session == null || session.getAttribute("user_id") == null) {
+        response.sendRedirect("Login.jsp");
+        return;
+    }
+%>
+
+<jsp:include page="Header.jsp"/>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Insert Rating</title>
 <style>
-        /* General body styling */
-        body {
+		body {
+			display:flex;
+			flex-direction:column;
             background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif;
-            margin: 0;
+            
             padding: 20px;
         }
 
         /* Form container styling */
         form {
+        	align-self:center;
             background-color: #222;
-            padding: 20px;
+            padding: 50px;
             border-radius: 10px;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 50px;
         }
 
         /* Label and input styling */
@@ -60,15 +72,14 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        
     </style>
+    
 </head>
-<<<<<<< HEAD
-<body>                                                                                                                                                                                                                                                                
-=======
 <body>
  
     <h2>Submit a Review</h2>
-    <form action="#" method="POST">
+    <form action="insertrating" method="POST">
         <!-- Rating (range 1 to 5) -->
         <label for="rating">Rating (1-5):</label>
         <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
@@ -85,7 +96,7 @@
         </select><br><br>
 
         <!-- Review Tags (Comma-separated tags) -->
-        <label for="review_tags">Review Tags (Comma separated, e.g., action, drama):</label>
+        <label for="review_tags">Review Tags (Comma separated, e.g., #action, #drama):</label>
         <input type="text" id="review_tags" name="review_tags" required><br><br>
 
         <!-- Spoiler Alert (Yes/No) -->
@@ -98,14 +109,34 @@
         <!-- Review Text -->
         <label for="review_text">Review Text:</label><br>
         <textarea id="review_text" name="review_text" rows="5" cols="50" required></textarea><br><br>
+        
+        <input type="hidden" id="uid" name="uid" value="<%= request.getParameter("uid") %>">
+        <input type="hidden" id="cid" name="cid" value="<%= request.getParameter("cid") %>">
 
         <!-- Submit Button -->
         <input type="submit" name="submit" value="Submit Review">
     </form>
+    <script>
+        // Function to show an alert if there is an error message
+        function showAlert() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+            const message = urlParams.get('message');
 
-  
+            if (error === 'true' && message) {
+                alert(message);// Show the error message
+                window.location.href = 'GetAllServlet';
+            }
+        }
 
->>>>>>> branch 'master' of https://github.com/sanirurajapaksha/SLIITFlix.git
+        // Call the showAlert function when the page loads
+        window.onload = showAlert;
+    </script>
+    
+    
+    
 
 </body>
 </html>
+
+<jsp:include page="Footer.jsp"/>

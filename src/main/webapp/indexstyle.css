@@ -1,0 +1,139 @@
+body {
+    background-image: url("assets/homewallpaper.jpg");
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #FFD700;
+}
+
+.search-container {
+    text-align: center;
+    padding: 2em;
+}
+
+
+
+#search-input {
+    width: 50%;
+    padding: 0.75em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+#search-button {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#rate_button {
+    margin-left: 10px;
+    margin-top:0px;
+    margin-bottom:20px;
+    width: 30%;
+    font-size: 1em;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+    gap: 0.2em;
+}
+
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    width: 250px;
+    margin: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3, .card h4, .card p {
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.card h3 {
+    color: #FFD700;
+}
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+#logo_footer {
+    width: auto;
+    height: 50px;
+}
