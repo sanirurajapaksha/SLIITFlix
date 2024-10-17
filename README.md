@@ -1,4 +1,4 @@
-# 🚀 **Project Name**
+# 🚀 **SLIITFlix - Online Movie and TV series Browsing System**
 
 ### **Overview**
 Welcome to our project repository! This project was developed in just **2 weeks** by our team, overcoming several hurdles along the way. Despite the tight timeline and technical challenges, we’re proud of what we’ve achieved.
@@ -20,11 +20,15 @@ Welcome to our project repository! This project was developed in just **2 weeks*
 ## 📸 **Screenshots**
 Here are some screenshots of the project:
 
-![Home Page Screenshot](path-to-homepage-screenshot.png)
-*Description of the home page features*
+![Home Page Screenshot](https://raw.githubusercontent.com/sanirurajapaksha/SLIITFlix/refs/heads/master/screencapture-localhost-14338-SLIITFlixSaniru-index-jsp-2024-10-17-15_21_43.png)
 
-![Feature X Screenshot](path-to-feature-screenshot.png)
-*Description of this feature*
+![Login page](https://raw.githubusercontent.com/sanirurajapaksha/SLIITFlix/refs/heads/master/screencapture-localhost-14338-SLIITFlixSaniru-Login-jsp-2024-10-17-15_22_29.png)
+
+![Submit Rating](https://github.com/sanirurajapaksha/SLIITFlix/blob/master/screencapture-localhost-14338-SLIITFlixSaniru-InsertRating-jsp-2024-10-17-15_24_31.png)
+
+
+![All Rating](https://raw.githubusercontent.com/sanirurajapaksha/SLIITFlix/refs/heads/master/screencapture-localhost-14338-SLIITFlixSaniru-GetAllServlet-2024-10-17-15_23_52.png)
+
 
 ---
 
