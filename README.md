@@ -5,8 +5,7 @@ Welcome to our project repository! This project was developed in just **2 weeks*
 
 ### **Project Highlights**
 - Built using **[Your Tech Stack]** (e.g., HTML, CSS, JavaScript, Java - JSP/Servlets)
-- Key features include **[List Your Features]**
-- **Live Demo:** [Link to demo if available]
+- Key features include **Ability to Register, Login, Rate, Raise support tickets, Submit new content (Fully working CRUD Operations)**
 
 ---
 
