@@ -4,7 +4,7 @@
 Welcome to our project repository! This project was developed in just **2 weeks** by our team, overcoming several hurdles along the way. Despite the tight timeline and technical challenges, we’re proud of what we’ve achieved.
 
 ### **Project Highlights**
-- Built using **[Your Tech Stack]** (e.g., HTML, CSS, JavaScript, Java - JSP/Servlets)
+- Built using - **HTML, CSS, JavaScript, Java - JSP/Servlets**
 - Key features include **Ability to Register, Login, Rate, Raise support tickets, Submit new content (Fully working CRUD Operations)**
 
 ---
